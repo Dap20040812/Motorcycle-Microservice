@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "61127973-5f32-45be-8f31-0c5b0839a3f9",
+		"name": "Microservice - Motorcycle",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26062871"
+	},
+	"item": [
+		{
+			"name": "Get Motorcycles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/motorcycle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"motorcycle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Motorcycle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"marca\": \"Ducati\",\r\n  \"model\": \"Panigale V4R\",\r\n  \"userId\": 1005280915\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/motorcycle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"motorcycle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Motorcycle By ID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Motorcycles By User ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/motorcycle/user/1005280915",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"motorcycle",
+						"user",
+						"1005280915"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
