@@ -29,6 +29,6 @@ public class BDService implements BDInterface{
 
     @Override
     public List<Motorcycle> findByUserId(int id) {
-        return findByUserId(id);
+        return bd.findByUserId(id);
     }
 }
